@@ -1,6 +1,6 @@
 <?php
 
-namespace gfirem\HtmlCssToImage;
+namespace scalater\HtmlCssToImage;
 
 use GuzzleHttp\Psr7\Response;
 

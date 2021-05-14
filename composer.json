@@ -1,5 +1,5 @@
 {
-    "name": "gfirem/php-htmlcsstoimage",
+    "name": "scalater/php-htmlcsstoimage",
     "description": "PHP Library to connect with htmlcsstoimage service",
     "type": "library",
     "license": "MIT",
@@ -19,7 +19,7 @@
     },
     "autoload": {
         "psr-4": {
-            "gfirem\\HtmlCssToImage\\": "./src"
+            "scalater\\HtmlCssToImage\\": "./src"
         }
     },
     "require-dev": {

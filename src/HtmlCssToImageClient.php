@@ -1,6 +1,6 @@
 <?php
 
-namespace gfirem\HtmlCssToImage;
+namespace scalater\HtmlCssToImage;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\ClientException;

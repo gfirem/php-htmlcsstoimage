@@ -1,12 +1,10 @@
 <?php
 
-use gfirem\HtmlCssToImage\HtmlCssToImage;
+use scalater\HtmlCssToImage\HtmlCssToImage;
 use GuzzleHttp\Client;
 use GuzzleHttp\Psr7\Response;
 use GuzzleHttp\Handler\MockHandler;
 use GuzzleHttp\HandlerStack;
-use GuzzleHttp\Psr7\Request;
-use GuzzleHttp\Exception\RequestException;
 
 class GetImageTest extends \Codeception\Test\Unit {
 	protected $image_id = 'bd6b0b94-cb7e-4913-ac65-94abafebb84023423';
