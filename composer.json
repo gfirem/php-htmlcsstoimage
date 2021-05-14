@@ -2,7 +2,7 @@
     "name": "gfirem/php-htmlcsstoimage",
     "description": "PHP Library to connect with htmlcsstoimage service",
     "type": "library",
-    "license": "Apache 3.0",
+    "license": "GPLv2 or later",
     "authors": [
         {
             "name": "Guillermo Figueroa Mesa (gfirem)",
