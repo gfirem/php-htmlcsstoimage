@@ -36,14 +36,15 @@ class HtmlCssToImage extends HtmlCssToImageClient {
 	 * @param string $html This is the HTML you want to render. You can send an HTML snippet (<div>Your content</div>) or an entire webpage.
 	 * @param string $url The fully qualified URL to a public webpage. Such as https://htmlcsstoimage.com. When passed this will override the html param and will generate a screenshot of the url.
 	 * @param string $css The CSS for your image. When using with url it will be injected into the page.
+	 * @param int $ms_delay The number of milliseconds the API should delay before generating the image. This is useful when waiting for JavaScript. We recommend starting with 500. Large values slow down the initial render time.
 	 *
 	 * @return array|false|Response|mixed
 	 */
-	public function post_image( string $html, string $url, string $css ) {
+	public function post_image( string $html, string $url, string $css, int $ms_delay = 1000 ) {
 		$source     = ! empty( $html ) ? $html : $url;
 		$source_key = ! empty( $html ) ? 'html' : 'url';
 
-		return $this->post( array( $source_key => $source, 'css' => $css, 'ms_delay' => 500 ) );
+		return $this->post( array( $source_key => $source, 'css' => $css, 'ms_delay' => $ms_delay ) );
 	}
 
 	/**
